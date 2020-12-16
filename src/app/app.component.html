@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <div class="row" style="margin-top: 5%" >
+    <div class="card">
+      <div class="card-header">
+        <span class="badge" [id]="i" *ngFor="let label of labels; let i=index" (click)="changeSelectedLabel(i)" [style.backgroundColor]="label.bgColor" style="color:#FFFFFF;margin:5px;font-size: 18px;">{{label.labelText}}</span>
+      </div>
+      <div class="card-body">
+        <p class="lead" id="doc"></p>
+        <button class="btn btn-primary" style="background-color: #0080ff;color:white" (click)="addAnnotation()">add Selected Annotation</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
